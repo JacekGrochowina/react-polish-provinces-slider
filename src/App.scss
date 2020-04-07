@@ -1,0 +1,22 @@
+
+// ====== VARIABLES ====== //
+    @import './vars.scss';
+
+
+* {
+    box-sizing: border-box;
+}
+
+svg {
+    width: 100%;
+    path {
+        fill: rgba(#C12727, 0.88);
+        stroke-width: 1px;
+        stroke: rgba(#571B1B, 0.72);
+        transition: fill 0.25s ease-in-out;
+        &:hover {
+            cursor: pointer;
+            fill: rgba(#E66D6D, 0.98);
+        }
+    }
+}
