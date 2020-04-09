@@ -50,9 +50,10 @@ function App() {
   }
   const [activeSlide, setActiveSlide] = useState(getActiveSlide());
 
-  // ref to provinces svg
-  const map = useRef(null);
+  const map = useRef(null);   // ref to provinces svg
   useEffect(() => {
+
+    // get elements (provinces) by id from map of country
     const [elements] = map.current.children;
     let provinces = [];
     const pushToArray = (value) => provinces.push(elements.getElementById(value));
@@ -73,6 +74,7 @@ function App() {
     pushToArray('malopolskie');
     pushToArray('podkarpackie');
 
+    // interactive of country map
     provinces.forEach((item, number) => {
       // show active province on start app
       provinces[activeSlide].setAttribute('active', 'true')
@@ -92,6 +94,7 @@ function App() {
         })
       })
     })
+
   }, [])
 
   // style of App
