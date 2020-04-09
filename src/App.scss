@@ -7,16 +7,56 @@
     box-sizing: border-box;
 }
 
+.App {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background-position: center;
+    background-size: cover;
+
+    position: relative;
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 65%;
+        z-index: 0;
+        background: linear-gradient(to left, rgba(0, 0, 0, 0.9), transparent);
+    }
+
+    .page-wraper {
+        width: 100%;
+    }
+}
+
 svg {
     width: 100%;
-    path {
-        fill: rgba(#C12727, 0.88);
-        stroke-width: 1px;
-        stroke: rgba(#571B1B, 0.72);
-        transition: fill 0.25s ease-in-out;
-        &:hover {
-            cursor: pointer;
+    filter: drop-shadow(0 0 15px rgba(0, 0, 0, 0.8));
+    g[active="true"] {
+        path {
             fill: rgba(#E66D6D, 0.98);
+            fill: rgba(#571B1B, 1);
+            &:hover {
+                fill: rgba(#571B1B, 1);
+            }
+        }
+    }
+    g {
+        path {
+            fill: rgba(#C12727, 0.75);
+            stroke-width: 1px;
+            stroke: rgba(#571B1B, 0.72);
+            transition-property: 
+                fill,
+                filter;
+            transition-duration: 0.25s;
+            &:hover {
+                cursor: pointer;
+                fill: rgba(#E66D6D, 0.98);
+            }
         }
     }
 }
