@@ -1,0 +1,24 @@
+
+// ====== VARIABLES ====== //
+@import '../vars.scss';
+
+.header {
+    font-family: $font__main;
+    font-weight: 700;
+    font-size: 4em;
+    color: $color__light;
+    text-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+    padding: 20px 10px;
+    margin-bottom: 40px;
+
+    position: relative;
+    &::before {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 8px;
+        width: 250px;
+        background-color: $color__leading;
+    }
+}

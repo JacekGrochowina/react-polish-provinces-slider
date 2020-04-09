@@ -111,10 +111,10 @@ function App() {
             <Scene />
           </Col>
 
-          <Col col={6} style={{
+          <Col col={5} offset={1} style={{
             width: '100%'
           }}>
-            <Info active={activeSlide} />
+            <Info activeId={activeSlide} />
           </Col>
         </Row>
       </div>

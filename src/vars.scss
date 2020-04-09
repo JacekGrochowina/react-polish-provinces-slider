@@ -1,4 +1,17 @@
 // ====== VARIABLES ====== //
 
+    // import
+        @import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Source+Sans+Pro:wght@600;700&display=swap');
+        /*  
+        *  Cource Sans Pro: 600, 700
+        *  Inconsolata: 400
+        */
+
     // color
-        $color_leading: #E11F1F;
+        $color__leading: #E11F1F;
+        $color__light: #FFFFFF;
+        $color__grey: #C2C2C2;
+
+    // font
+        $font__main: "Source Sans Pro", sans-serif;
+        $font__mono: "Inconsolata", monospace;

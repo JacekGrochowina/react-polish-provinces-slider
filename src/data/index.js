@@ -51,7 +51,7 @@ const DATA = [
     {
         key: 4,
         province: 'Lubuskie',
-        capital: 'Zielona Góra/Gorzów Wielkopolski',
+        capital: 'Zielona Góra / Gorzów Wielkopolski',
         population: '1 003 000',
         area: '13 988 km²',
         bgImg: lbBg
@@ -67,7 +67,7 @@ const DATA = [
     {
         key: 6,
         province: 'Kujawsko-Pomorskie',
-        capital: 'Bydgoszcz/Toruń',
+        capital: 'Bydgoszcz / Toruń',
         population: '2 060 000',
         area: '17 971 km²',
         bgImg: kpBg
