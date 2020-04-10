@@ -1,3 +1,7 @@
 .info {
     padding: 20px;
+    @media(max-width: 1200px) {
+        max-width: 500px;
+        margin: auto;
+    }
 }
