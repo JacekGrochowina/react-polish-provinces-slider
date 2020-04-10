@@ -8,6 +8,7 @@ import './App.scss';
 
 import data from './data';
 import Info from './components/Info';
+import ImageBg from './components/ImageBg';
 
 function App() {
 
@@ -97,24 +98,21 @@ function App() {
 
   }, [])
 
-  // style of App
-  const style = {
-    height: '100vh',
-    backgroundImage: `url(${data[activeSlide].bgImg})`
-  }
-
   return (
-    <div className="App" style={style}>
+    <div className="App">
+
+      <ImageBg src={data[activeSlide].bgImg} />
 
       <div className="page-wraper">
         <Row>
-          <Col col={6} ref={map} style={{
-            width: '100%'
+          <Col xl={6} md={12} sm={12} xs={12} ref={map} style={{
+            width: '100%',
+            padding: '10px'
           }}>
             <Scene />
           </Col>
 
-          <Col col={5} offset={1} style={{
+          <Col xl={5} xlOffset={1} md={12} sm={12} xs={12} style={{
             width: '100%'
           }}>
             <Info activeId={activeSlide} />
