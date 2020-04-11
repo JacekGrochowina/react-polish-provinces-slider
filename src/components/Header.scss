@@ -6,6 +6,9 @@
     font-family: $font__main;
     font-weight: 700;
     font-size: 4em;
+    @media(max-width: 768px) {
+        font-size: 3em;
+    }
     color: $color__light;
     text-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
     padding: 20px 10px;
