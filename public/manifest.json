@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Mapa Polski",
+  "name": "Przewodnik po województwach Polski",
   "icons": [
     {
       "src": "favicon.ico",
