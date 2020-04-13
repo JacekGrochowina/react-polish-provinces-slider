@@ -1,3 +1,22 @@
+### 🔧 Technology Stack
+
+- React framework
+	- using hooks
+- GSAP library
+
+# Polish Provinces Map
+
+After click on province on the map you will see informations about name of capital, populations and area.
+
+**🔗 DEMO: http://projects.jacekcv.com/poland-map/**
+
+-------------
+**❗️❤️ THANKS FOR CHECKING MY PROJECT ❤️❗️**
+
+🌐 My website: http://jacekcv.com/
+
+-------------
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
